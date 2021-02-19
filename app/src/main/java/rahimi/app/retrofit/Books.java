@@ -2,15 +2,15 @@ package rahimi.app.retrofit;
 
 public class Books {
 
-    private String Id, name, author, genre, published, describtion, price, rate, link_img, page_count;
 
-    public String getId() {
-        return Id;
-    }
 
-    public void setId(String id) {
-        Id = id;
-    }
+
+    private String id, name, author, genre, published, describtion, price, rate, link_img, page_count;
+
+
+    public String getId() { return id; }
+
+    public void setId(String id) { this.id = id; }
 
     public String getName() {
         return name;
