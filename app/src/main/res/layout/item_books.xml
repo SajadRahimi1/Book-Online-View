@@ -16,20 +16,20 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/img_books"
-            android:scaleType="centerCrop"/>
+            android:scaleType="fitCenter"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_marginLeft="-40dp"
+        android:layout_marginLeft="-50dp"
         android:layout_toRightOf="@+id/cardImg"
         app:cardCornerRadius="16dp"
         app:cardElevation="-2dp"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginTop="15dp"
-        app:cardBackgroundColor="#1E2E87">
+        app:cardBackgroundColor="#0E3252">
 
         <RelativeLayout
             android:layout_width="match_parent"
