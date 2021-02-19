@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     List<Books> list = new ArrayList<>();
 
     ApiInterface request;
-    String url = "http://192.168.56.1/retrofit/";
+    String url = "http://192.168.10.1/retrofit/";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

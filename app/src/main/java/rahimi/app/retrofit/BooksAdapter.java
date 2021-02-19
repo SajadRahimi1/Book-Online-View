@@ -69,6 +69,13 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.myViewHolder
         public void onClick(View v) {
             Intent intent = new Intent(context,DetailBookActivity.class);
             intent.putExtra(DetailBookActivity.ID,data.get(getAdapterPosition()).getId());
+            intent.putExtra("bookName",data.get(getAdapterPosition()).getName());
+            intent.putExtra("bookAuthor",data.get(getAdapterPosition()).getAuthor());
+            intent.putExtra("bookPublished",data.get(getAdapterPosition()).getPublished());
+            intent.putExtra("bookGenre",data.get(getAdapterPosition()).getGenre());
+            intent.putExtra("bookPrice",data.get(getAdapterPosition()).getPrice());
+            intent.putExtra("bookDescribe",data.get(getAdapterPosition()).getDescribtion());
+            intent.putExtra("imgSrc",data.get(getAdapterPosition()).getLink_img());
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
         }
