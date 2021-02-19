@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#040c38"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailBookActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/detail_toolbar"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book name"
+            android:id="@+id/detail_name_book"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+</RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        app:cardBackgroundColor="#040c38"
+        android:layout_height="300dp"
+        android:id="@+id/detail_cardImg"
+        app:cardCornerRadius="16dp"
+        android:layout_below="@id/detail_toolbar"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/detail_bookImg"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#0E3252"
+        android:layout_height="200dp"
+        app:cardElevation="-2dp"
+        app:cardCornerRadius="16dp"
+        android:layout_below="@id/detail_toolbar"
+        android:layout_toRightOf="@id/detail_cardImg"
+        android:layout_marginTop="112dp"
+        android:layout_marginLeft="-48dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="Describe"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_cardImg"
+        android:layout_margin="8dp"
+        android:text="Author: "
+        android:textColor="@color/white"
+        android:id="@+id/detail_author"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_author"
+        android:layout_margin="8dp"
+        android:text="Published At: "
+        android:textColor="@color/white"
+        android:id="@+id/detail_published"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_published"
+        android:layout_margin="8dp"
+        android:text="Genre: "
+        android:textColor="@color/white"
+        android:id="@+id/detail_genre"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_below="@id/detail_cardImg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_monetization_on_24"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_price"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="19.99"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
