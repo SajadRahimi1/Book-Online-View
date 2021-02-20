@@ -68,7 +68,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@id/layout_register"
@@ -76,7 +76,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/bg_btn"
-        android:text="Register"
+        android:text="Login"
         android:textAllCaps="false"
         android:textColor="@color/colorOnPrimary" />
     <TextView
